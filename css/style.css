@@ -1,3 +1,8 @@
+* {
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+}
 body {
     margin: 0%;
     padding: 0%;
@@ -14,7 +19,7 @@ body {
 .container .section {
     height: 100vh;
     width: 25%;
-    border-right: 2px solid rgba(0, 0, 0, .5);
+    border-right: 2px solid rgba(0, 0, 0,);
     box-sizing: border-box;
     z-index: 1;
 }
@@ -37,12 +42,11 @@ body {
     width: 100%;
     background-color: rgba(0,0,0,.1);
     text-align: center;
-    /* color:  rgba(225,225,225, .2); */
+    color:  rgba(225,225,225, .2);
     font-size: 15em;
-    border-top: 2px solid rgba(0, 0, 0, .5);
-    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    border-top: 2px solid rgba(0, 0, 0,.5);
+    border-bottom: 2px solid rgba(0, 0, 0,.5);
  }
-
 
 .container .section .content .box {
     position: absolute;
