@@ -21,7 +21,6 @@ body {
     width: 25%;
     border-right: 2px solid rgba(0, 0, 0,);
     box-sizing: border-box;
-    z-index: 1;
 }
 
 .container .section:last-child {
@@ -34,34 +33,40 @@ body {
 }
 
 .container .section .content h1 {
-    position: absolute;
     margin: 0;
     padding: 0;
     top: 50%;
-    transform: translateY(-50%);
     width: 100%;
-    background-color: rgba(0,0,0,.1);
+    position: absolute;
     text-align: center;
-    color:  rgba(225,225,225, .2);
     font-size: 15em;
+    background-color: rgba(0,0,0,.1);
+    color:  rgba(225,225,225, .2);
     border-top: 2px solid rgba(0, 0, 0,.5);
     border-bottom: 2px solid rgba(0, 0, 0,.5);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
  }
 
 .container .section .content .box {
     position: absolute;
     top: 50%;
-    transform: translateY(100%);
     box-sizing: border-box;
     padding: 40px;
     background-color: rgba(225,225,225, 1);
     text-align: center;
     transition: 0.5s;
     opacity: 0;
+    -ms-transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
 }
 
 .container .section.active .content .box { 
     opacity: 1;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -122,7 +127,3 @@ body {
     background-position: center;
     transition: 0.5s;
 }
-
-
-
- 
