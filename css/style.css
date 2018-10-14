@@ -16,6 +16,7 @@ body {
     overflow: hidden;
     display: flex;
 }
+
 .container .section {
     height: 100vh;
     width: 25%;
@@ -127,3 +128,28 @@ body {
     background-position: center;
     transition: 0.5s;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    
+.container .section {
+    height: 100vh;
+    width: 50%;
+}
+
+.container .section .content .box {
+    padding: 10px;
+}
+ }
+
+ @media screen and (min-width: 577px) and (max-width: 769px) {
+    .container .section {
+        height: 100vh;
+        width: 50%;
+    }
+    
+    .container .section .content .box {
+        padding: 5px;
+    }
+     }
+
+ 
